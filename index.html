@@ -18,15 +18,23 @@
         rel="stylesheet">
 </head>
 
-<body class="flex justify-center items-center m-auto h-screen bg-dark-blue font-manrope relative">
-    <div class="bg-dark-grayish-blue w-1/3 p-5 rounded-xl text-center relative">
+<body class="flex justify-center items-center h-screen bg-dark-blue font-manrope relative">
+
+    <!-- When applying these classes on the below div, for some reason its not working:
+     w-[90%] sm:w-[60%] md:w-[40%] -->
+    <div class="advice-container w-1/3 bg-dark-grayish-blue p-5 rounded-xl text-center relative">
         <h1 class="text-neon-green font-semibold text-xs tracking-[0.25em]">
-            ADVICE #117<!-- Advice ID goes here -->
+            ADVICE #117
         </h1>
+
         <p class="text-light-cyan text-xl font-bold my-8">
             "It is easy to sit up and take notice, what's difficult is getting up and taking action."
         </p>
-        <img class="mb-8" src="./images/pattern-divider-desktop.svg" alt="">
+
+        <!-- Not able to horizontally center the image, on larger screens it appears on the left
+         (you can check this by zooming out in the browser) -->
+        <img class="mb-8 mx-auto" src="" alt="pattern divider">
+
         <button
             class="p-4 rounded-full bg-neon-green absolute -bottom-6 left-1/2 transform -translate-x-1/2 transition hover:shadow-[0_0_20px_0] hover:shadow-neon-green">
             <img src="./images/icon-dice.svg" alt="dice icon" width="20">
@@ -34,7 +42,7 @@
     </div>
 
 
-    <div class="attribution absolute bottom-1 text-grayish-blue">
+    <div class="attribution absolute bottom-1 text-grayish-blue text-xs">
         Challenge by <a class="underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
             Mentor</a>.
         Coded by <a class="underline" href="https://github.com/abdullahmd2">Abdullah Mohammad</a>.
